@@ -1,0 +1,222 @@
+{
+  "security": [
+    { "schemaName": "Task", "operation": 0, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 1, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 2, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 3, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "TaskHistory", "operation": 0, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "TaskHistory", "operation": 1, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "TaskHistory", "operation": 2, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "TaskHistory", "operation": 3, "policyType": 0, "accessLevel": 3, "fieldNames": [] }
+  ],
+  "policies": [
+    {
+      "schemaName": "Task",
+      "policyName": "Owners read their own tasks",
+      "policyDescription": "A signed-in user may only read tasks they own.",
+      "policyType": 0,
+      "operation": 0,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owners create their own tasks",
+      "policyDescription": "A signed-in user may only add tasks they own.",
+      "policyType": 0,
+      "operation": 1,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owners change their own tasks",
+      "policyDescription": "A signed-in user may only edit tasks they own.",
+      "policyType": 0,
+      "operation": 2,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owners remove their own tasks",
+      "policyDescription": "A signed-in user may only delete tasks they own.",
+      "policyType": 0,
+      "operation": 3,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "TaskHistory",
+      "policyName": "Owners read their own task history",
+      "policyDescription": "A signed-in user may only read history of tasks they own.",
+      "policyType": 0,
+      "operation": 0,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "TaskHistory",
+      "policyName": "Owners add history for their own tasks",
+      "policyDescription": "A signed-in user may only add history they own.",
+      "policyType": 0,
+      "operation": 1,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "TaskHistory",
+      "policyName": "Owners change history for their own tasks",
+      "policyDescription": "A signed-in user may only edit history they own.",
+      "policyType": 0,
+      "operation": 2,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "TaskHistory",
+      "policyName": "Owners remove history for their own tasks",
+      "policyDescription": "A signed-in user may only delete history they own.",
+      "policyType": 0,
+      "operation": 3,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 1,
+            "leftOperand": "Owner",
+            "operator": 0,
+            "rightSource": 2,
+            "rightOperand": "$UserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 0,
+      "isAllowPolicy": true
+    }
+  ]
+}

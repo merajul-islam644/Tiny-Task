@@ -1,0 +1,17 @@
+{
+  "project": {
+    "tenantId": "D00c8e310d1d8401f9fb75d6bd3cf4332",
+    "apiUrl": "https://blocksapi.slsblx.com",
+    "appDomain": "https://D00c8e310d1d8401f9fb75d6bd3cf4332-a4dac9a1-7308-45e1-8cd7-b3cd851083d2.slsblx.com"
+  },
+  "data": {
+    "schemas": "blocks/data/schemas",
+    "rules": "blocks/data/rules.json"
+  },
+  "repo": {
+    "branch": "dev",
+    "fullName": "merajul-islam644/Tiny-Task",
+    "provider": "github",
+    "url": "https://github.com/merajul-islam644/Tiny-Task"
+  }
+}

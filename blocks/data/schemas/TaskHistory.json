@@ -1,0 +1,14 @@
+{
+  "schemaName": "TaskHistory",
+  "collectionName": "TaskHistories",
+  "schemaType": 1,
+  "fields": [
+    { "name": "TaskId", "type": "String", "isArray": false, "isRequired": true, "description": "The task this entry is about" },
+    { "name": "TaskTitle", "type": "String", "isArray": false, "isRequired": false, "description": "Title at the time of the change" },
+    { "name": "Action", "type": "String", "isArray": false, "isRequired": true, "description": "created, edited, completed, reopened or deleted" },
+    { "name": "ChangedFields", "type": "String", "isArray": false, "isRequired": false, "description": "Comma separated fields that changed" },
+    { "name": "Actor", "type": "String", "isArray": false, "isRequired": true, "description": "Who made the change" },
+    { "name": "Owner", "type": "String", "isArray": false, "isRequired": true, "description": "The user the task belonged to" },
+    { "name": "OccurredOn", "type": "DateTime", "isArray": false, "isRequired": true, "description": "When the change happened" }
+  ]
+}

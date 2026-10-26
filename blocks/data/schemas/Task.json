@@ -1,0 +1,14 @@
+{
+  "schemaName": "Task",
+  "collectionName": "Tasks",
+  "schemaType": 1,
+  "fields": [
+    { "name": "Title", "type": "String", "isArray": false, "isRequired": true, "description": "What the task is (up to 200 characters)" },
+    { "name": "Notes", "type": "String", "isArray": false, "isRequired": false, "description": "Extra detail (up to 1,000 characters)" },
+    { "name": "DueDate", "type": "DateTime", "isArray": false, "isRequired": false, "description": "The date the task is wanted by" },
+    { "name": "Completed", "type": "Boolean", "isArray": false, "isRequired": true, "description": "Whether the task is done" },
+    { "name": "CompletedOn", "type": "DateTime", "isArray": false, "isRequired": false, "description": "When the task was ticked" },
+    { "name": "CompletedBy", "type": "String", "isArray": false, "isRequired": false, "description": "Who ticked the task" },
+    { "name": "Owner", "type": "String", "isArray": false, "isRequired": true, "description": "The user the task belongs to" }
+  ]
+}

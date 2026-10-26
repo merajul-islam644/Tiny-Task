@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome to TinyTasks",
+  "subtitle": "Sign in with your work account to reach your list.",
+  "continue": "Sign in",
+  "redirecting": "Signing you in…",
+  "hint": "You'll sign in on your secure account page and can stay signed in on this device.",
+  "notConfigured": "Sign-in is not available yet on this app.",
+  "failed": "Sign-in failed",
+  "inactive": "Your account is no longer active.",
+  "back": "Back to sign in"
+}

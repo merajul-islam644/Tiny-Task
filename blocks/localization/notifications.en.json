@@ -1,0 +1,7 @@
+{
+  "title": "Notifications",
+  "empty.title": "You're all caught up",
+  "empty.description": "No new notifications right now.",
+  "completed": "You completed \"{title}\".",
+  "markAll": "Mark all as read"
+}

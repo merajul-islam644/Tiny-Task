@@ -1,0 +1,9 @@
+{
+  "title": "Profile",
+  "subtitle": "Your account details.",
+  "name": "Name",
+  "email": "Email",
+  "roles": "Roles",
+  "active": "Active",
+  "noRoles": "No roles assigned"
+}
